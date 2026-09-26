@@ -129,6 +129,8 @@ export default function CinematicVideoPlayer({
             ref={videoRef}
             src={videoSrc}
             playsInline
+            webkit-playsinline="true"
+            x5-playsinline="true"
             loop
             muted={isMuted}
             preload="metadata"
@@ -136,7 +138,7 @@ export default function CinematicVideoPlayer({
             onTimeUpdate={handleTimeUpdate}
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
-            className="w-full h-full object-contain block bg-black select-none"
+            className="w-full h-full object-contain block bg-black select-none pointer-events-none"
           />
 
           {/* Ambient Film Vignette */}
