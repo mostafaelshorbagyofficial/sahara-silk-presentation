@@ -164,27 +164,30 @@ export const PRESENTATION_DATA = {
       steps: [
         {
           step: "STEP I",
-          name: "The Golden Clarifying Nectar",
-          type: "Prep & Detoxify",
-          desc: "An ultra-gentle, sulfate-free lather infused with prickly pear enzyme and Atlas cedarwood that purifies scalp sebum without stripping moisture.",
-          usage: "Massage into wet scalp for two minutes; inhale the grounding botanical aroma.",
-          volume: "250 ml / 8.45 fl. oz."
+          name: "Natural 2-in-1 Conditioning Detangler Spray",
+          type: "Prep & Botanical Detangling",
+          image: "/images/product-detangler.jpg",
+          desc: "An Italian-formulated leave-in conditioning elixir with ultra virgin olive oil and shea butter that gently softens, moisturizes, and tames tangles for effortless combing and styling.",
+          usage: "Spritz evenly across damp or dry hair from roots to ends; comb through gently to activate thermal defense.",
+          volume: "500 ml / 16.9 fl. oz."
         },
         {
           step: "STEP II",
-          name: "The Silken Moisture Infusion",
-          type: "Deep Nourishment & Repair",
-          desc: "A rich restorative emulsion of pure cold-pressed argan oil and bio-silk peptides that penetrates the hair cortex to heal split ends and restore elasticity.",
-          usage: "Apply from mid-lengths to ends; leave for five minutes before cool water rinse.",
-          volume: "200 ml / 6.76 fl. oz."
+          name: "Pure Organic Pumpkin Seed Oil",
+          type: "Scalp Vitality & Follicle Growth",
+          image: "/images/product-pumpkin-oil.jpg",
+          desc: "A potent, cold-pressed organic active that deeply nourishes the scalp barrier, moisturizes hair fibers, promotes healthy growth, and prevents hair thinning.",
+          usage: "Apply 3-5 drops directly onto the scalp; massage in circular motions for 2-3 minutes to stimulate microcirculation.",
+          volume: "60 ml / 2.0 fl. oz."
         },
         {
           step: "STEP III",
-          name: "The Sahara Luminous Dry Oil",
-          type: "Shield & Weightless Gloss",
-          desc: "A weightless multi-use dry elixir that seals cuticles against humidity, provides 230°C thermal protection, and imparts a glass-like reflective sheen.",
-          usage: "Warm two drops between palms and stroke through dry or towel-damp hair.",
-          volume: "50 ml / 1.70 fl. oz."
+          name: "London 3-in-1 Organic Hair Oil",
+          type: "Strength, Length & Reflective Silk Gloss",
+          image: "/images/product-3in1-oil.jpg",
+          desc: "Infused with 101 green botanical herbs to fortify hair strands, lock in silken luster, seal split ends, and ensure hair remains strong, longer, and resilient against shedding.",
+          usage: "Warm a few drops between palms and stroke through mid-lengths to ends as a daily shield or nocturnal restoration seal.",
+          volume: "150 ml / 5.1 fl. oz."
         }
       ]
     },
@@ -565,27 +568,30 @@ export const PRESENTATION_DATA = {
       steps: [
         {
           step: "الخطوة الأولى",
-          name: "رحيق التنقية الذهبي",
-          type: "التحضير والتنقية العميقة",
-          desc: "رغوة فائقة النعومة وخالية تماماً من الكبريتات، معززة بإنزيم التين الشوكي وخشب أرز الأطلس لتنقية الفروة دون تجريدها من الرطوبة الطبيعية.",
-          usage: "يُدلك بلطف على فروة الرأس المبللة لمدة دقيقتين مع استنشاق النفحات النباتية المهدئة.",
-          volume: "٢٥٠ ملل"
+          name: "بخاخ فك التشابك والبلسم الطبيعي ٢ في ١",
+          type: "التحضير وفك التشابك النباتي",
+          image: "/images/product-detangler.jpg",
+          desc: "تركيبة إيطالية فاخرة غنية بزيت الزيتون البكر الممتاز وزبدة الشيا لترطيب وتنعيم الخصلات وتسهيل التمشيط والتصفيف وتوفير حماية حرارية متكاملة.",
+          usage: "يرش بالتساوي على الشعر الرطب أو الجاف من الجذور حتى الأطراف، ثم يمشط برفق لفك التشابك وحماية الشعر.",
+          volume: "٥٠٠ ملل"
         },
         {
           step: "الخطوة الثانية",
-          name: "بلسم الترطيب الحريري المكثف",
-          type: "التغذية العميقة والترميم",
-          desc: "مستحلب غني بزيت الأركان النقي المعصور على البارد وببتيدات الحرير الحيوية، يتغلغل في عمق الشعرة لمعالجة التقصف واستعادة المرونة.",
-          usage: "يوزع بالتساوي من منتصف الخصلات حتى الأطراف ويترك لمدة خمس دقائق قبل الشطف بالماء الفاتر.",
-          volume: "٢٠٠ ملل"
+          name: "زيت بذور اليقطين العضوي النقي",
+          type: "تغذية الفروة وتحفيز نمو البصيلات",
+          image: "/images/product-pumpkin-oil.jpg",
+          desc: "إكسير عضوي معصور على البارد يغذي حاجز الفروة بعمق، ويعزز ترطيب الألياف ويحفز نمو الشعر ويمنع تساقطه بفاعلية طبيعية مثبتة.",
+          usage: "توضع ٣ إلى ٥ قطرات مباشرة على الفروة وتدلك بحركات دائرية لمدة دقيقتين لتحفيز الدورة الدموية.",
+          volume: "٦٠ ملل"
         },
         {
           step: "الخطوة الثالثة",
-          name: "زيت سهارى الجاف المضيء",
-          type: "الحماية واللمعان غير الدهني",
-          desc: "إكسير جاف فائق الخفة يغلف ألياف الشعر ضد الرطوبة، ويوفر حماية حرارية حتى ٢٣٠ درجة مئوية، ويمنح لمعاناً عاكساً يشبه الزجاج.",
-          usage: "توضع قطرتان بين راحتي اليد وتمرر بلطف على الشعر الجاف أو الرطب.",
-          volume: "٥٠ ملل"
+          name: "زيت الشعر العضوي ٣ في ١ من سهارى سيلك لندن",
+          type: "القوة والنعومة واللمعان الحريري الفائق",
+          image: "/images/product-3in1-oil.jpg",
+          desc: "مستخلص من ١٠١ عشبة نباتية خضراء لتقوية ألياف الشعر ومنع التساقط وترميم الأطراف المتقصفة ومنح الخصلات لمعاناً حريرياً يدوم طويلاً.",
+          usage: "تدفأ بضع قطرات بين راحتي اليد وتمرر من منتصف الشعر حتى الأطراف كدرع حماية يومي أو علاج ليلي مكثف.",
+          volume: "١٥٠ ملل"
         }
       ]
     },

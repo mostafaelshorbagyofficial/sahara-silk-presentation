@@ -60,18 +60,27 @@ export default function HeroSection({ onEnter }) {
           </div>
         </div>
 
-        {/* Minimal Editorial Emblem / Card */}
-        <div className="hidden lg:flex flex-col items-center justify-center p-10 rounded-2xl bg-noir-card/60 backdrop-blur-xl border border-gold/20 max-w-xs text-center space-y-4 shadow-2xl">
-          <div className="w-20 h-20 rounded-full border border-gold/40 flex items-center justify-center text-gold">
-            <span className="font-display text-2xl font-light">SS</span>
-          </div>
-          <div className="space-y-1">
-            <span className="text-[11px] font-mono tracking-widest uppercase text-gold">
-              {t.meta.edition}
-            </span>
-            <p className="font-editorial text-sm italic text-sahara-300">
-              {t.meta.tagline}
-            </p>
+        {/* Brand Ambassador Hero Portrait */}
+        <div className="flex flex-col items-center max-w-sm w-full mx-auto md:mx-0 group">
+          <div className="relative rounded-3xl overflow-hidden border border-gold/40 bg-noir-card/80 shadow-[0_20px_50px_rgba(0,0,0,0.8),0_0_30px_rgba(197,168,128,0.15)] ring-1 ring-gold/20 p-2">
+            <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden">
+              <img
+                src="/images/hero-ambassador.jpg"
+                alt="Sahara Silk Brand Ambassador"
+                className="w-full h-full object-cover object-top filter brightness-[1.02] contrast-[1.02] group-hover:scale-105 transition-transform duration-700 ease-luxury"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-noir/90 via-transparent to-transparent pointer-events-none" />
+              
+              {/* Floating Luxury Tag */}
+              <div className="absolute bottom-4 inset-x-4 p-3.5 rounded-xl bg-noir-card/85 backdrop-blur-md border border-gold/30 text-center space-y-1">
+                <span className="text-[10px] font-mono tracking-widest uppercase text-gold block">
+                  {t.meta.brandName} • {t.meta.edition}
+                </span>
+                <p className="font-editorial text-xs italic text-sahara-200">
+                  {t.meta.tagline}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

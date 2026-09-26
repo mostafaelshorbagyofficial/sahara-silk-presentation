@@ -56,32 +56,27 @@ export default function RitualSection() {
         {/* Active Step Showcase Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          {/* Left / Center Flacon Silhouette & Visual Canvas */}
-          <div className="lg:col-span-5 p-12 rounded-3xl bg-gradient-to-b from-noir-surface to-noir border border-gold/20 flex flex-col items-center justify-center text-center relative shadow-2xl min-h-[420px]">
+          {/* Left / Center Product Photography Showcase */}
+          <div className="lg:col-span-5 p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-noir-surface to-noir border border-gold/30 flex flex-col items-center justify-center text-center relative shadow-2xl min-h-[460px] group">
             {/* Ambient Backlight */}
-            <div className="absolute inset-0 bg-radial-gradient from-gold/15 to-transparent blur-2xl pointer-events-none" />
+            <div className="absolute inset-0 bg-radial-gradient from-gold/20 via-gold/5 to-transparent blur-2xl pointer-events-none" />
 
-            {/* Stylized Minimal Flacon Graphic */}
-            <div className="relative z-10 space-y-6 flex flex-col items-center">
-              <div className="w-24 h-48 sm:w-28 sm:h-56 rounded-t-3xl rounded-b-xl border-2 border-gold/40 bg-gradient-to-b from-sahara-900/60 to-noir-surface shadow-2xl flex flex-col items-center justify-between p-4 relative overflow-hidden group">
-                <div className="w-8 h-4 bg-gold/60 rounded-t-sm" />
-                <div className="w-full text-center space-y-1">
-                  <span className="text-[9px] font-display font-bold tracking-widest text-gold block">
-                    SAHARA SILK
-                  </span>
-                  <span className="text-[8px] font-mono text-sahara-400 block truncate">
-                    {currentStepData.type}
-                  </span>
-                </div>
-                <div className="w-full h-1 bg-gold/30 rounded-full" />
+            {/* Product Photography Container */}
+            <div className="relative z-10 w-full flex flex-col items-center space-y-4">
+              <div className="relative w-full max-w-[280px] sm:max-w-[320px] aspect-square rounded-2xl overflow-hidden bg-noir-card border border-white/10 shadow-2xl flex items-center justify-center p-2">
+                <img
+                  src={currentStepData.image || "/images/product-detangler.jpg"}
+                  alt={currentStepData.name}
+                  className="w-full h-full object-contain filter brightness-[1.03] group-hover:scale-105 transition-transform duration-700 ease-luxury"
+                />
               </div>
 
-              <div className="space-y-1">
-                <span className="text-xs font-mono text-gold tracking-wider block">
+              <div className="space-y-1 pt-2">
+                <span className="text-xs font-mono font-bold text-gold tracking-widest block uppercase">
                   {currentStepData.volume}
                 </span>
-                <span className="text-[11px] text-sahara-400 font-sans block">
-                  {isRTL ? "زجاج عنبري مصقول مع مضخة ذهبية" : "Amber Glass Flacon with Champagne Gold Dispenser"}
+                <span className="text-xs text-sahara-300 font-sans block">
+                  {currentStepData.name}
                 </span>
               </div>
             </div>
